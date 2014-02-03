@@ -158,6 +158,8 @@
 				/*@editable*/ text-decoration:underline;
 			}
 
+
+
 			/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: HEADER /\/\/\/\/\/\/\/\/\/\ */
 
 			/**
@@ -200,7 +202,85 @@
 
 			#headerImage{
 				height:auto;
-				max-width:600px !important;
+				max-width:600px;
+			}
+
+			/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: COLUMNS; LEFT, RIGHT /\/\/\/\/\/\/\/\/\/\ */
+
+			/**
+			* @tab Columns
+			* @section left column text
+			* @tip Set the styling for your email's left column text. Choose a size and color that is easy to read.
+			*/
+			.leftColumnContent{
+				/*@editable*/ background-color:#FFFFFF;
+			}
+
+			/**
+			* @tab Columns
+			* @section left column text
+			* @tip Set the styling for your email's left column text. Choose a size and color that is easy to read.
+			*/
+			.leftColumnContent div{
+				/*@editable*/ color:#505050;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:14px;
+				/*@editable*/ line-height:150%;
+				/*@editable*/ text-align:left;
+			}
+
+			/**
+			* @tab Columns
+			* @section left column link
+			* @tip Set the styling for your email's left column links. Choose a color that helps them stand out from your text.
+			*/
+			.leftColumnContent div a:link, .leftColumnContent div a:visited, /* Yahoo! Mail Override */ .leftColumnContent div a .yshortcuts /* Yahoo! Mail Override */{
+				/*@editable*/ color:#336699;
+				/*@editable*/ font-weight:normal;
+				/*@editable*/ text-decoration:underline;
+			}
+
+			.leftColumnContent img{
+				display:inline;
+				height:auto;
+			}
+
+			/**
+			* @tab Columns
+			* @section right column text
+			* @tip Set the styling for your email's right column text. Choose a size and color that is easy to read.
+			*/
+			.rightColumnContent{
+				/*@editable*/ background-color:#FFFFFF;
+			}
+
+			/**
+			* @tab Columns
+			* @section right column text
+			* @tip Set the styling for your email's right column text. Choose a size and color that is easy to read.
+			*/
+			.rightColumnContent div{
+				/*@editable*/ color:#505050;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:14px;
+				/*@editable*/ line-height:150%;
+				/*@editable*/ text-align:left;
+			}
+
+			/**
+			* @tab Columns
+			* @section right column link
+			* @tip Set the styling for your email's right column links. Choose a color that helps them stand out from your text.
+			*/
+			.rightColumnContent div a:link, .rightColumnContent div a:visited, /* Yahoo! Mail Override */ .rightColumnContent div a .yshortcuts /* Yahoo! Mail Override */{
+				/*@editable*/ color:#336699;
+				/*@editable*/ font-weight:normal;
+				/*@editable*/ text-decoration:underline;
+			}
+
+			.rightColumnContent img{
+				display:inline;
+				height:auto;
 			}
 
 			/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: MAIN BODY /\/\/\/\/\/\/\/\/\/\ */
@@ -346,13 +426,13 @@
                                     	<tr>
                                         	<td valign="top">
                                             	<div mc:edit="std_preheader_content">
-                                                	 Use this area to offer a short teaser of your email's content. Text here will show in the preview area of some email clients.
+                                                	 Você é o nosso convidado especial, esperamos por você.
                                                 </div>
                                             </td>
                                             <!-- *|IFNOT:ARCHIVE_PAGE|* -->
 											<td valign="top" width="190">
                                             	<div mc:edit="std_preheader_links">
-                                                	Is this email not displaying correctly?<br /><a href="*|ARCHIVE|*" target="_blank">View it in your browser</a>.
+                                                	Este e-mail não exibiu corretamente?<br /><a href="www.bianchivisione.com.br" target="_blank">Abra em seu navegador</a>.
                                                 </div>
                                             </td>
 											<!-- *|END:IF|* -->
@@ -373,7 +453,7 @@
                                             <td class="headerContent">
                                             
                                             	<!-- // Begin Module: Standard Header Image \\ -->
-                                            	<img src="https://lh3.googleusercontent.com/-6NV6siDM3aY/UuqqTgL-cPI/AAAAAAAAABg/lZp6yvg0jlU/s288/LOGOTIPOIII.jpg" style="max-width:600px;" id="headerImage campaign-icon" mc:label="header_image" mc:edit="header_image" mc:allowdesigner mc:allowtext />
+                                            	<img src="https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-frc1/t1/1891212_10201243106552542_35348095_n.jpg" style="max-width:600px;" id="headerImage campaign-icon" mc:label="header_image" mc:edit="header_image" mc:allowdesigner mc:allowtext />
                                             	<!-- // End Module: Standard Header Image \\ -->
                                             
                                             </td>
@@ -387,31 +467,65 @@
                                     <!-- // Begin Template Body \\ -->
                                 	<table border="0" cellpadding="0" cellspacing="0" width="600" id="templateBody">
                                     	<tr>
-                                            <td valign="top" class="bodyContent">
-                                
+                                        	<td valign="top" width="280" class="leftColumnContent">
+                                            
+                                                <!-- // Begin Module: Top Image with Content \\ -->
+                                                <table border="0" cellpadding="20" cellspacing="0" width="100%">
+                                                    <tr mc:repeatable>
+                                                        <td valign="top">
+                                                            <img src="" style="max-width:260px;" mc:label="image" mc:edit="tiwc300_image00" />
+                                                            <div mc:edit="tiwc300_content00">
+ 	                                                           <h4 class="h4">Importância</h4>
+                                                               <strong>Planejamento</strong> Atualmente a popularização dos sistemas de busca e sua importância na comunicação é um dos maiores índices de audiência mundial, comparado aos meios de comunicação convencionais como tv e rádio. 
+
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <!-- // End Module: Top Image with Content \\ -->
+                                            
+                                            </td>
+                                        	<td valign="top" width="280" class="rightColumnContent">
+                                            
+                                                <!-- // Begin Module: Top Image with Content \\ -->
+                                                <table border="0" cellpadding="20" cellspacing="0" width="100%">
+                                                    <tr mc:repeatable>
+                                                        <td valign="top">
+                                                            <img src="" style="max-width:260px;" mc:label="image" mc:edit="tiwc300_image01" />
+                                                            <div mc:edit="tiwc300_content01">
+ 	                                                           <h4 class="h4">Solução</h4>
+                                                               <strong>Recurso estratégico:</strong> A grande procura de mídias sociais tornam indispensáveis a elaboração de social media marketing agregado com qualquer plano de comunicação que sua empresa tenha hoje.
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <!-- // End Module: Top Image with Content \\ -->
+                                            
+                                            </td>
+                                        </tr>
+                                    	<tr>
+                                        	<td colspan="3" valign="top" class="bodyContent">
+                                            
                                                 <!-- // Begin Module: Standard Content \\ -->
                                                 <table border="0" cellpadding="20" cellspacing="0" width="100%">
                                                     <tr>
                                                         <td valign="top">
                                                             <div mc:edit="std_content00">
-                                                                <h1 class="h1">Bianchi Visione</h1>
-                                                                <h2 class="h2"></h2>
+                                                                <h1 class="h1"></h1>
+                                                                <h2 class="h2">Nós Somos Social Media</h2>
                                                                 <h3 class="h3"></h3>
                                                                 <h4 class="h4"></h4>
-                                                                <strong>Sobre Nós:</strong> A Bianchi Visione tem como intuito alcançar conexões inovadoras, tendo como objetivo primordial salientar resultados efetivos, através de diversificações de mídias sociais, adequadas de acordo com o perfil do cliente. Através destes serviços, oferecemos resultados eficazes para que a marca/produto seja referencial perante a sociedade.
- 
- 
-
+                                                                <strong>Sobre a Bianchi Visione:</strong> A Bianchi Visione tem como intuito alcançar conexões inovadoras, tendo como objetivo primordial salientar resultados efetivos, através de diversificações de mídias sociais, adequadas de acordo com o perfil do cliente. Através destes serviços, oferecemos resultados eficazes para que a marca/produto seja referencial perante a sociedade.
                                                                 <br />
                                                                 <br />
-                                                                Operando de forma ética, nossa equipe destina a trabalhar com diferenciados públicos, administrando nossos serviços com sublimidade diante as mídias sociais, firmando de forma positiva a imagem em vigor.
- 
-Agregada a ferramentas apropriadas, desenvolvemos com afeição projetos personalizados, considerando as necessidades individuais de cada pessoa/empresa.                                                            </div>
+                                                                Operando de forma ética, nossa equipe destina a trabalhar com diferenciados públicos, administrando nossos serviços com sublimidade diante as mídias sociais, firmando de forma positiva a imagem em vigor. 
+Agregada a ferramentas apropriadas, desenvolvemos com afeição projetos personalizados, considerando as necessidades individuais de cada pessoa/empresa.
+                                                            </div>
 														</td>
                                                     </tr>
                                                 </table>
                                                 <!-- // End Module: Standard Content \\ -->
-                                                
+                                            
                                             </td>
                                         </tr>
                                     </table>
@@ -430,8 +544,8 @@ Agregada a ferramentas apropriadas, desenvolvemos com afeição projetos persona
                                                     <tr>
                                                         <td colspan="2" valign="middle" id="social">
                                                             <div mc:edit="std_social">
-                                                                &nbsp;<a href="*|TWITTER:PROFILEURL|*">follow on Twitter</a> | <a href="*|FACEBOOK:PROFILEURL|*">friend on Facebook</a> | <a href="*|FORWARD|*">forward to a friend</a>&nbsp;
-                                                            </div>
+                                                                &nbsp;<a href="https://twitter.com/bianchi_visione">Twitter</a> | <a href="https://www.facebook.com/bianchivisione">Facebook</a> | <a href="*|FORWARD|*">Linkedin</a>&nbsp;
+                                                             </div>
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -439,23 +553,23 @@ Agregada a ferramentas apropriadas, desenvolvemos com afeição projetos persona
                                                             <div mc:edit="std_footer">
 																<em>Copyright &copy; *|CURRENT_YEAR|* *|LIST:COMPANY|*, All rights reserved.</em>
 																<br />
-																*|IFNOT:ARCHIVE_PAGE|* *|LIST:DESCRIPTION|*
+																
 																<br />
-																<strong>Our mailing address is:</strong>
+																<strong>Nosso e-mail: bianchivisione@gmail.com</strong>
 																<br />
-																*|HTML:LIST_ADDRESS_HTML|**|END:IF|* 
+																http://www.bianchivisione.com.br 
                                                             </div>
                                                         </td>
                                                         <td valign="top" width="190" id="monkeyRewards">
                                                             <div mc:edit="monkeyrewards">
-                                                                *|IF:REWARDS|* *|HTML:REWARDS|* *|END:IF|*
+                                                                
                                                             </div>
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <td colspan="2" valign="middle" id="utility">
                                                             <div mc:edit="std_utility">
-                                                                &nbsp;<a href="*|UNSUB|*">unsubscribe from this list</a> | <a href="*|UPDATE_PROFILE|*">update subscription preferences</a>&nbsp;
+                                                                &nbsp;<a href="*|UNSUB|*"></a>  <a href="*|UPDATE_PROFILE|*"></a>&nbsp;
                                                             </div>
                                                         </td>
                                                     </tr>
@@ -476,3 +590,4 @@ Agregada a ferramentas apropriadas, desenvolvemos com afeição projetos persona
         </center>
     </body>
 </html>
+Status 
